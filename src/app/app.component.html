@@ -17,5 +17,11 @@
     <div class="field">
       <input class="input" (input)="setTypeLetter($event.target.value)" />
     </div>
+    <br />
+    <p>Remaining Letters: {{ WordsLeft }}</p>
+    <br />
+    <p *ngIf="wrongLetters > 0" class="incorrect">
+      Wrong Letters: {{ wrongLetters }}
+    </p>
   </div>
 </div>
